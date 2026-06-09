@@ -20,17 +20,21 @@ public class AdminApp extends Application {
         title.setStyle("-fx-font: normal bold 24px 'serif'");
 
         Button moviesBtn = new Button("Manage Movies");
+        Button genresBtn = new Button("Manage Genres");
         Button clientsBtn = new Button("Register Customers");
 
         moviesBtn.setOnAction(e -> new Movies().start(new Stage()));
+        genresBtn.setOnAction(e-> new Genres().start(new Stage()));
         clientsBtn.setOnAction(e -> new Customers().start(new Stage()));
 
         moviesBtn.setStyle("-fx-background-color: darkslateblue; -fx-text-fill: white; -fx-font-size:13pt;");
+        genresBtn.setStyle("-fx-background-color: darkslateblue; -fx-text-fill: white; -fx-font-size:13pt;");
         clientsBtn.setStyle("-fx-background-color: darkslateblue; -fx-text-fill: white; -fx-font-size:13pt;");
         moviesBtn.setMaxWidth(Double.MAX_VALUE);
+        genresBtn.setMaxWidth(Double.MAX_VALUE);
         clientsBtn.setMaxWidth(Double.MAX_VALUE);
 
-        VBox vbox = new VBox(20, title, moviesBtn, clientsBtn);
+        VBox vbox = new VBox(20, title, moviesBtn,genresBtn, clientsBtn);
         vbox.setAlignment(Pos.CENTER);
         vbox.setPadding(new Insets(30));
         vbox.setStyle("-fx-background-color: WHITE;");
