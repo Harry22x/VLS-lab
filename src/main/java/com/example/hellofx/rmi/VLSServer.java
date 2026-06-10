@@ -15,8 +15,8 @@ public class VLSServer {
      */
     public static void main(String[] args) {
         try {
-            // IMPORTANT: set this to PC 1's actual LAN IP address
-            System.setProperty("java.rmi.server.hostname", "192.168.100.36");
+            //  Server PC   LAN IP address
+            System.setProperty("java.rmi.server.hostname", "10.55.29.100");
 
             VLSServiceImpl service = new VLSServiceImpl();
             Registry registry = LocateRegistry.createRegistry(1099);

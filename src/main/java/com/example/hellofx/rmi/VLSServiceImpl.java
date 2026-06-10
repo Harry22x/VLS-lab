@@ -10,6 +10,8 @@ import java.util.List;
  * Server-side implementation of {@link VLSService}.
  * All database access happens here; clients never touch the DB directly.
  */
+
+// UnicastRemoteObject makes the object accessible over a network
 public class VLSServiceImpl extends UnicastRemoteObject implements VLSService {
 
     /** Active JDBC connection to the MySQL database on the server. */

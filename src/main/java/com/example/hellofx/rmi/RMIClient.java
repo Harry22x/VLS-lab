@@ -8,8 +8,8 @@ import java.rmi.registry.Registry;
  */
 public class RMIClient {
 
-    /** IP address of the Server PC. Change this to PC 1's LAN IP. */
-    private static final String SERVER_IP = "192.168.100.36";
+    /** IP address of the Server PC.  */
+    private static final String SERVER_IP = "10.55.29.100";
 
     /** RMI registry port (must match VLSServer). */
     private static final int PORT = 1099;
